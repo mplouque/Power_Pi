@@ -1,0 +1,52 @@
+
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: grey;
+	color: white;
+	text-align: center;
+	padding: 10px;
+}
+
+.footer h3{
+	display: inline;
+	margin-right: 1em;
+	font: 14px sans-serif;
+}
+
+a:link {
+	text-decoration: none;
+	color: #2200CC;
+	text-align: center;
+}
+
+a:visited {
+	color: darkmagenta;
+}
+
+a:focus {
+	color: white;
+	background-color: MediumBlue;
+	font-size: 1.3em;
+	text-decoration: underline;
+}
+
+.accent {
+	font-weight: bold;
+	font-variant: small-caps;
+	font-size: 1.4em;
+}
+
+/*
+add to html
+<div class="wrapper">
+	<div class="footer">
+	  <h3><a href="register.php">register.php</a></h3>
+	  <h3><a href="other.php">other.php</a></h3>
+	  <h3><a href="other2.php">other2.php</a></h3>
+	</div>
+	 </div>
+*/

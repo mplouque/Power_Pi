@@ -1,0 +1,18 @@
+[Unit]
+Description=PowerPi A/C current reading and recording daemon
+Wants=network.target
+After=network.target firewalld.service mariadb.service
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/etc/powerpi_client
+ExecStart=/usr/bin/env bash /etc/powerpi_client/start.sh
+KillMode=process
+Restart=on-failure
+RestartSec=5
+
+[Install]
+Alias=powerpi.service
+WantedBy=multi-user.target
+

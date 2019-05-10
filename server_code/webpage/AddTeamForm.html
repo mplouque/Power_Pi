@@ -1,0 +1,38 @@
+<?php
+
+?>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add a Power-Pi unit</title>
+    <style>
+      #EmptySpaceSelector {
+        display: "none"
+      }
+    </style>
+    <script type="text/javascript">
+      var count = 1;
+
+      function addTeam() {
+        count++;
+        document.getElementById("EmptySpaceSelector").outerHTML = "<label> Team " + count.toString() + ": </label>" +
+          "<input name=\"team" + count.toString() + "_name\" type=\"text\" placeholder=\"Enter Team Name\" />" +
+          "<input name=\"team" + count.toString() + "_ip\" type=\"text\" placeholder=\"Enter IP Address\" />" +
+          "<br />" +
+          "<span id=\"EmptySpaceSelector\"></span>";
+      }
+    </script>
+  </head>
+  <body>
+    <form id="controller" action="form_processor_addTeams.php" method="get" target="_blank">
+      <label> Team 1: </label>
+      <input type="text" name="team1_name" placeholder="Enter Team Name"></input>
+      <input type="text" name="team1_ip" placeholder="Enter IP Address"></input>
+      <br />
+      <span id="EmptySpaceSelector"></span>
+      <button type="button" onclick="addTeam()"> Add Team </button>
+      <button type="submit"> Submit </button>
+    </form>
+  </body>
+</html>

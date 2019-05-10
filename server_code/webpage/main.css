@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*Iframe/ Chart stuff*/
+.halfheight {
+  height: 50%;
+  vertical-align: bottom;
+}
+
+.halfwidth {
+  float: left;
+  width: 50%;
+}
+
+.thirdwidth_down {
+  float:left;
+  width: 33%;
+}
+
+.thirdwidth_up {
+  float:left;
+  width:34%;
+}
+
+.ninetyheight {
+  height:90%;
+}
+
+.tenheight {
+  height:10%;
+}
+
+html, body {
+ margin:0;
+ padding:0;
+ height:100%;
+}
+
+
+iframe.homeGraph {
+  border: none;
+  height: 100%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Footer Stuff*/
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 98.95%;
+  background-color: grey;
+  color: white;
+  text-align: center;
+  padding: 10px;
+
+}
+
+.footer h3{
+  display: inline;
+  margin-right: 1em;
+  font: 14px sans-serif;
+}
+
+a:link {
+  text-decoration: none;
+  color: #2200CC;
+  text-align: center;
+}
+
+a:visited {
+  color: darkmagenta;
+}
+
+a:focus {
+  color: white;
+  background-color: MediumBlue;
+  font-size: 1.3em;
+  text-decoration: underline;
+}
+
+.accent {
+  font-weight: bold;
+  font-variant: small-caps;
+  font-size: 1.4em;
+}
