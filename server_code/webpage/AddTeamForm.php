@@ -75,7 +75,7 @@ $php_list = json_encode(getTeamInfo());
         document.getElementById("EmptySpaceSelector").outerHTML = "<label> Team " + count.toString() + ": </label>" +
           "<input name=\"team" + count.toString() + "_name\" type=\"text\" placeholder=\"Enter Team Name\" value=\"" + name + "\" />" +
           "<input name=\"team" + count.toString() + "_ip\" type=\"text\" placeholder=\"Enter IP Address\" value=\"" + ip + "\" />" +
-          "<input name=\"team" + count.toString() + "_color\" type=\"text\" placeholder=\"Enter team color (#0F0F0F)\" value=\"" + color + "\" />" +
+          "<input name=\"team" + count.toString() + "_color\" type=\"text\" placeholder=\"Enter team color (#0F0F0F)\" value=\"" + color + "\" /> Clear Remote Pi Data?" +
           "<input name=\"team"+count.toString() + "_clear\" type=\"checkbox\" />" + 
           "<br />" +
           "<span id=\"EmptySpaceSelector\"></span>";
