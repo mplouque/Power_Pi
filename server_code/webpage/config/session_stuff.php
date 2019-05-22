@@ -16,6 +16,8 @@ $time = $_SERVER['REQUEST_TIME'];
 /**
 * for a 30 minute timeout, specified in seconds
 */
+//the below variables must all be the same
+//commmented out vars are located in php.ini
 //session.gc_maxlifetime = 30;
 //session.cookie_lifetime = 30;
 $timeout_duration = 180;

@@ -1,9 +1,0 @@
-create table `teams` (`id` int(10) NOT NULL AUTO_INCREMENT, `name` varchar(15), `ip` varchar(16), `color` varchar(7), PRIMARY KEY(`id`) ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
-
-
-CREATE TABLE `power_load` (
-	`id` int(10) NOT NULL AUTO_INCREMENT,
-	`state` varchar(10) NOT NULL,
-	PRIMARY KEY (`id`)
-);
-
